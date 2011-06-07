@@ -15,17 +15,19 @@ use 5.005;
 use strict;
 
 BEGIN {
-    $Module::Package::VERSION = '0.21';
+    $Module::Package::VERSION = '0.22';
     $inc::Module::Package::VERSION ||= $Module::Package::VERSION;
     @inc::Module::Package::ISA = __PACKAGE__;
 }
 
 sub import {
     my $class = shift;
-    eval "use inc::Module::Install 1.01 (); 1" or $class->error($@);
+    $INC{'inc/Module/Install.pm'} = __FILE__;
+    unshift @INC, 'inc' unless $INC[0] eq 'inc';
+    eval "use Module::Install 1.01 (); 1" or $class->error($@);
 
     package main;
-    inc::Module::Install->import();
+    Module::Install->import();
     eval {
         module_package_internals_version_check($Module::Package::VERSION);
         module_package_internals_init(@_);
@@ -36,6 +38,7 @@ sub import {
     }
 }
 
+# XXX Remove this when things are stable.
 sub error {
     my ($class, $error) = @_;
     if (-e 'inc' and not -e 'inc/.author') {
@@ -46,7 +49,13 @@ sub error {
         die <<"...";
 This should not have happened. Hopefully this dump will explain the problem:
 
+inc::Module::Package: $inc::Module::Package::VERSION
+Module::Package: $Module::Package::VERSION
+inc::Module::Install: $inc::Module::Install::VERSION
+Module::Install: $Module::Install::VERSION
+
 Error: $error
+
 %INC:
 $dump1
 \@INC:
