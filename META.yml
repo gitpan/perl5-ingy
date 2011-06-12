@@ -19,10 +19,13 @@ no_index:
     - inc
     - t
 requires:
+  Capture::Tiny: 0.10
   IO::All: 0.41
+  YAML::XS: 0.35
   perl: 5.10.0
-  perl5: 0.03
+  perl5: 0.04
 resources:
+  homepage: http://github.com/ingydotnet/perl5-ingy-pm/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/ingydotnet/perl5-ingy-pm.git
-version: 0.03
+version: 0.04

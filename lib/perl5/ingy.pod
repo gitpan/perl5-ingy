@@ -13,8 +13,6 @@ Using this module is the same as:
     use warnings;
     use IO::All;
     use YAML::XS;
-    use Cwd qw[abs_path cwd];
-    use File::Spec;
     use Capture::Tiny ':all';
     ;use XXX -with => 'YAML::XS';
 
