@@ -14,7 +14,7 @@ Using this module is the same as:
     use IO::All;
     use YAML::XS;
     use Capture::Tiny ':all';
-    ;use XXX -with => 'YAML::XS';
+    use XXX -with => 'YAML::XS';
 
 This is an early release. More modules will be added as this framework
 matures.
