@@ -1,5 +1,9 @@
 =encoding utf8
 
+=head1 NAME
+
+perl5::ingy - Ingy's Favorite Perl 5 Feature Set
+
 =head1 SYNOPSIS
 
     use perl5-ingy;

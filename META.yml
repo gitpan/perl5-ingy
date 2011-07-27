@@ -1,5 +1,5 @@
 ---
-abstract: ~
+abstract: "Ingy's Favorite Perl 5 Feature Set"
 author:
   - 'Ingy döt Net <ingy@ingy.net>'
 build_requires:
@@ -19,10 +19,14 @@ no_index:
     - inc
     - t
 requires:
+  Capture::Tiny: 0.11
+  IO::All: 0.43
+  XXX: 0.17
+  YAML::XS: 0.35
   perl: 5.10.0
-  perl5: 0.06
+  perl5: 0.08
 resources:
   homepage: http://github.com/ingydotnet/perl5-ingy-pm/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/ingydotnet/perl5-ingy-pm.git
-version: 0.06
+version: 0.07
