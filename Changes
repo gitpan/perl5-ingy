@@ -1,36 +1,25 @@
----
-version: 0.07
-date:    Wed Jul 27 11:12:32 CDT 2011
-changes:
-- Make module declare its dependencies
----
-version: 0.06
-date:    Sun Jul 17 22:56:47 PDT 2011
-changes:
-- Use new perl5 API
----
-version: 0.05
-date:    Mon Jun 13 12:16:03 EST 2011
-changes:
-- Make sure XXX shows up as dependency
----
-version: 0.04
-date:    Sun Jun 12 13:45:31 EST 2011
-changes:
-- Switch to new perl5 API
-- Remove Cwd File::Spec
----
-version: 0.03
-date:    Sat Jun 11 16:35:24 EST 2011
-changes:
-- Added YAML::XS Cwd File::Spec Capture::Tiny XXX
----
-version: 0.02
-date:    Tue Jun  7 17:21:37 EST 2011
-changes:
-- Rerelease now that perl5 is indexed.
----
-version: 0.01
-date:    Sun Jun  5 23:33:31 EST 2011
-changes:
-- First Release
+0.08 Fri Jun 27 19:11:55 PDT 2014
+ - Switch to Zilla::Dist
+
+0.07 Wed Jul 27 11:12:32 CDT 2011
+ - Make module declare its dependencies
+
+0.06 Sun Jul 17 22:56:47 PDT 2011
+ - Use new perl5 API
+
+0.05 Mon Jun 13 12:16:03 EST 2011
+ - Make sure XXX shows up as dependency
+
+0.04 Sun Jun 12 13:45:31 EST 2011
+ - Switch to new perl5 API
+ - Remove Cwd File::Spec
+
+0.03 Sat Jun 11 16:35:24 EST 2011
+ - Added YAML::XS Cwd File::Spec Capture::Tiny XXX
+
+0.02 Tue Jun  7 17:21:37 EST 2011
+ - Rerelease now that perl5 is indexed.
+
+0.01 Sun Jun  5 23:33:31 EST 2011
+ - First Release
+
