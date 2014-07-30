@@ -29,4 +29,4 @@ resources:
   bugtracker: https://github.com/ingydotnet/perl5-ingy-pm/issues
   homepage: https://github.com/ingydotnet/perl5-ingy-pm
   repository: https://github.com/ingydotnet/perl5-ingy-pm.git
-version: '0.08'
+version: '0.09'

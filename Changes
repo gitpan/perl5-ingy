@@ -1,3 +1,7 @@
+0.09 Wed Jul 30 16:00:51 PDT 2014
+ - Fix Meta and add Contributing
+ - Switch IRC to
+
 0.08 Fri Jun 27 19:11:55 PDT 2014
  - Switch to Zilla::Dist
 
