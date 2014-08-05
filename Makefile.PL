@@ -26,7 +26,7 @@ my %WriteMakefileArgs = (
     "YAML::XS" => "0.35",
     "perl5" => "0.10"
   },
-  "VERSION" => "0.09",
+  "VERSION" => "0.10",
   "test" => {
     "TESTS" => "t/*.t"
   }
