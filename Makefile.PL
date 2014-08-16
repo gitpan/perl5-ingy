@@ -11,7 +11,7 @@ use ExtUtils::MakeMaker 6.30;
 
 my %WriteMakefileArgs = (
   "ABSTRACT" => "Ingy's Favorite Perl 5 Feature Set",
-  "AUTHOR" => "Ingy d\x{f6}t Net <ingy\@ingy.net>",
+  "AUTHOR" => "Ingy d\x{f6}t Net <ingy\@cpan.org>",
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
   },
@@ -26,7 +26,7 @@ my %WriteMakefileArgs = (
     "YAML::XS" => "0.35",
     "perl5" => "0.10"
   },
-  "VERSION" => "0.12",
+  "VERSION" => "0.13",
   "test" => {
     "TESTS" => "t/*.t"
   }
